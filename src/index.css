@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --font-pixel: 'Press Start 2P', 'DotGothic16', monospace;
+  --font-pixel-jp: 'DotGothic16', 'Noto Sans JP', monospace;
+  --font-pixel-sub: 'Silkscreen', 'DotGothic16', monospace;
+  --font-explanation: 'Plus Jakarta Sans', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Retro Pixel Font Classes */
+.font-pixel {
+  font-family: var(--font-pixel);
+}
+
+.font-pixel-jp {
+  font-family: var(--font-pixel-jp);
+}
+
+.font-pixel-sub {
+  font-family: var(--font-pixel-sub);
+}
+
+/* Explicit standard readable font for EXPLANATIONS, NOTES, DEFINITIONS, CHAT EXPLANATIONS */
+.font-explanation,
+.explanation-text,
+.explanation-font {
+  font-family: var(--font-explanation) !important;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+/* Retro Pixel Box Borders & Shadows */
+.pixel-box {
+  border: 2px solid #1c1917;
+  box-shadow: 3px 3px 0 0 #1c1917;
+}
+
+.dark .pixel-box {
+  border: 2px solid #383b4e;
+  box-shadow: 3px 3px 0 0 #090a0f;
+}
+
+.pixel-box-sm {
+  border: 2px solid #1c1917;
+  box-shadow: 2px 2px 0 0 #1c1917;
+}
+
+.dark .pixel-box-sm {
+  border: 2px solid #383b4e;
+  box-shadow: 2px 2px 0 0 #090a0f;
+}
+
+.pixel-box-amber {
+  border: 2px solid #b45309;
+  box-shadow: 3px 3px 0 0 #78350f;
+}
+
+.pixel-box-emerald {
+  border: 2px solid #047857;
+  box-shadow: 3px 3px 0 0 #064e3b;
+}
+
+.pixel-box-rose {
+  border: 2px solid #be123c;
+  box-shadow: 3px 3px 0 0 #881337;
+}
+
+.pixel-box-cyan {
+  border: 2px solid #0e7490;
+  box-shadow: 3px 3px 0 0 #164e63;
+}
+
+/* Tactile Pixel Buttons */
+.pixel-btn {
+  border: 2px solid #1c1917;
+  box-shadow: 2px 2px 0 0 #1c1917;
+  transition: transform 0.05s ease, box-shadow 0.05s ease;
+  user-select: none;
+}
+
+.pixel-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 0 #1c1917;
+}
+
+.pixel-btn:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0 0 #1c1917;
+}
+
+.dark .pixel-btn {
+  border: 2px solid #4b526d;
+  box-shadow: 2px 2px 0 0 #090a0f;
+}
+
+.dark .pixel-btn:hover {
+  box-shadow: 3px 3px 0 0 #090a0f;
+}
+
+.dark .pixel-btn:active {
+  box-shadow: 1px 1px 0 0 #090a0f;
+}
+
+/* Retro CRT / Gameboy Grid background */
+.retro-grid-bg {
+  background-image: radial-gradient(rgba(28, 25, 23, 0.08) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+.dark .retro-grid-bg {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+/* 3D Flashcard flip utilities */
+.perspective-1000 {
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Pixel scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ebd8;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #181926;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1917;
+  border: 1px solid #f1ebd8;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #4b526d;
+  border: 1px solid #181926;
+}

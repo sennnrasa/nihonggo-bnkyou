@@ -1,0 +1,6 @@
+{
+  "name": "Belajar Bahasa Jepang Interaktif",
+  "description": "Aplikasi belajar bahasa Jepang lengkap JLPT N5: Kosakata lengkap, Pola Kalimat Bunpou, Huruf Kana, Partikel, Konjugasi Kata Kerja, Flashcard 3D, Kuis Interaktif, Lencana Prestasi Harian, dan Dashboard Pemantauan Siswa.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
